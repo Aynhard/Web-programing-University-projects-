@@ -1,0 +1,99 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+.header {
+	width:100%;
+	height:28%;
+	background:#580000;
+
+}
+h1 {
+		text-align:center;
+		color:white;
+		font-size:35px;
+		margin:0px;
+	}
+hr {
+		width:500px;
+}
+.header p {
+		text-align:center;
+		color:white;
+		font-size:20px;
+	}
+button {
+		width:160px;
+		height:25px;
+		background: white;
+		font-weight: bold;
+	}
+.main {
+	width:100%;
+	height:65%;
+	background:#FFB926;
+}
+.gameBox {
+	width:265px;
+	height:270px;
+	margin:auto;
+	border:1px solid #FFB926;
+}
+.box {
+        border: 3px solid #000;
+        margin-top:10px;
+      }
+.cell {
+        width: 60px;
+        height: 60px;
+        margin: 1px;
+        text-align: center;
+        background-color: #ffffff;
+        font-weight: bold;
+        font-size:27px; 
+        border:1px solid black;      
+    }
+.cell:hover{
+ 			background:#ccc;
+ }
+.empty {
+         background-color: #E67E22;
+         border:0px solid black;
+    }
+.empty:hover{
+ 			background:#E67E22;
+ }
+.rules{
+		width:55%;
+		height:120px;
+		margin:auto;
+		margin-top:30px;
+		background-color: #ffffff;
+		border:1px solid black;
+}
+h2 {
+		font-weight: bold;
+		font-size:20px;
+		text-decoration:underline;
+		text-align: center;
+}
+.rules p {
+		text-align: center;
+		font-size:18px;
+		font-style: italic;
+		font-weight: bold;
+}
+.footer {
+	width:100%;
+	height:7%;
+	margin:0;
+	padding:0;
+	background:#E67E22;
+}
+.footer p {
+		text-align: center;
+		font-size:17px;
+		margin:0px;
+		padding:15px 0;
+		border-top:1px solid black;
+}

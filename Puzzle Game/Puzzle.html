@@ -1,0 +1,61 @@
+<html>
+    <head>
+      <title>Пъзел 1-15</title>
+        <script src="Game.js" type="text/javascript"></script>
+		    <link rel="stylesheet" type="text/css" href="GameStyle.css">
+    </head>
+
+<body onload="startPuzzle()">
+ <div class="header">
+  <h1>Нареди пъзела</h1>
+   <hr>
+    <p id="moves"></p>
+      <p id="time"></p>
+      <p>
+        <button onclick="easyGame()">По-лесно ниво</button>
+        <button onclick="window.location.reload()">Започни нова игра</button>
+      </p>
+ </div>
+ <div class="main">
+     <div class="gameBox">
+      <table class="box">
+        <tr>
+          <td id="0" class="cell" onclick="clickCell(this)">1</td>
+          <td id="1" class="cell" onclick="clickCell(this)">2</td>
+          <td id="2" class="cell" onclick="clickCell(this)">3</td>
+          <td id="3" class="cell" onclick="clickCell(this)">4</td>
+        </tr>
+        <tr>
+          <td id="4" class="cell" onclick="clickCell(this)">5</td>
+          <td id="5" class="cell" onclick="clickCell(this)">6</td>
+          <td id="6" class="cell" onclick="clickCell(this)">7</td>
+          <td id="7" class="cell" onclick="clickCell(this)">8</td>
+        </tr>
+        <tr>
+          <td id="8" class="cell" onclick="clickCell(this)">9</td>
+          <td id="9" class="cell" onclick="clickCell(this)">10</td>
+          <td id="10" class="cell" onclick="clickCell(this)">11</td>
+          <td id="11" class="cell" onclick="clickCell(this)">12</td>
+       </tr>
+        <tr>
+          <td id="12" class="cell" onclick="clickCell(this)">13</td>
+          <td id="13" class="cell" onclick="clickCell(this)">14</td>
+          <td id="14" class="cell" onclick="clickCell(this)">15</td>
+          <td id="15" class="cell" onclick="clickCell(this)"></td>
+        </tr>
+      </table>
+    </div>
+	  <div class="rules">
+		  <h2>Правила:</h2>
+      <p>
+		  1. В играта трябва да се наредят последователно числата от 1 до 15, считано отляво-надясно.<br/>
+		  2. Квадратчето се мести след единично цъкане на избраното за преместване число.
+      </p>
+	  </div>
+    </div>
+    <div class="footer">
+          <p>Copyright © 2017. Всички права запазени. |
+          <strong>Създал: <i>Генади</i></strong></p>
+    </div>
+ </body>
+</html>

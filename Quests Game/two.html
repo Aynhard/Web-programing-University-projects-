@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GroupWork7</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+<style>
+	body{
+	 margin:0;
+	 padding:0;
+	 background:url(bg.jpg)center 0 no-repeat;
+	 background-size:cover;
+	}
+	#container {
+      position:absolute;
+      width:1000px;
+      height:720px;
+      left: 50%;
+ 	  transform: translate(-50%, 0);
+ 	  z-index: 1;
+    }
+    #background {
+      position:absolute;
+      top:20px;
+      width: 1000px;
+      height: 700px;
+      background-color: black;
+      border:1px solid black;
+      z-index: -1;
+      opacity: 0.8;
+      left: 50%;
+ 	  transform: translate(-50%, 0);
+    }
+    #back{
+	 display:block;
+	 float:left;
+	 margin:10px;
+	 width:260px;
+	 height:70px;
+	 background:#5C0000;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	}
+	#first{
+	 display:block;
+	 float:left;
+	 margin:10px 0 0 90px;
+	 width:260px;
+	 height:70px;
+	 background:#017100;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	}
+	#next{
+	 display:block;
+	 margin:10px;
+	 float:right;
+	 width:260px;
+	 height:70px;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	 animation: anim 1s linear infinite alternate; 
+	}
+	@keyframes anim {	
+	 from {background: #C10000;}
+	 to {background: #5C0000;} 
+	}
+	#header{
+		width:100%;
+		height:100px;
+		margin:20px 0 0 0;
+	}
+	#header h1{
+		font-size:45px;
+		font-weight: bold;
+		color:#fff;
+		text-align: center;
+		font-style: italic;
+		animation: headtext 1s linear alternate; 
+	}
+		@keyframes headtext {	
+	      from {transform: rotateX(0deg);font-size:5px;}
+	      to {transform: rotateX(360deg);font-size:45px;} 
+	}
+	#uslovie{
+    	width:100%;
+    	height:40px;
+    }
+    #uslovie h2{
+    	margin:6px 0 0 10px;
+    	text-align:left;
+    	color:#FFD8D8;
+    	font-size:25px;
+    	font-style: italic;
+    }
+	#main{
+		width:98%;
+		height:400px;
+		margin:5px 10px;
+		border:1px solid white;
+	}
+	#Copyright{
+		position: absolute;
+		bottom:10px;
+		width:100%;
+		height:50px;
+	}
+	#Copyright p{
+		text-align: center;
+		color:#fff;
+	}
+	#Copyright span{
+		font-size:20px;
+	}
+	a{
+	 font-size:20px;
+	 font-family:"Arial Black", Gadget, sans-serif;
+	 color:#fff;
+	 text-decoration:none;
+	}
+/*ЗАДАЧА 2 */
+#missbox1,#missbox2,#missbox3,#missbox4{
+	display:inline-block;
+	width: 120px;
+    height: 25px;
+    border-bottom: 1px solid #C10000;
+    	text-align: center;
+}
+#text{
+	color:#fff;
+	font-size:25px;	
+}
+#levski{
+	float:right;
+	margin:20px 10px 0 0 ;
+	color:#fff;
+	font-size:25px;
+	font-style:italic;
+}
+#word1,#word2,#word3,#word4{
+	font-size:25px;
+	font-style:italic;
+	text-align: center;
+	display:inline-block;
+	margin:0;
+	color:#C10000;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<h1>ЗАДАЧА 2</h1>
+	</div>
+	<div id="uslovie">
+		<h2><u>Условие:</u> Попълнете с дадените думи празните места в текста :</h2>
+	</div>
+	<div id="main">
+		<q id="text">
+	 	Ах Българийо, Бъларийо! Защо си толкова заспала! Събуди се, събуди се от <div id="missbox1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>! Стига вече, пет века близо! Аз сиромахът, уловен от ловчанец-предател, в село Къкрина на хана на края, уловен от 20 души заптиета и няколко души български изроди. С мене си имах двама верни мои <div id="missbox2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> решителни и тий мене не оставиха. От потираджиите лесно щяхме да се избавим, защото беше късно през нощта. Като ги прегазим и едного ударих, те хвърлиха от 20 пушки нагоре изведнаж на мене. Раних се от едната <div id="missbox3" ondrop="drop(event)" ondragover="allowDrop(event)"></div> на лявото ухо. Оттам ни закараха при каймакама в Ловеч и оттам без забава в Търново ни изпратиха при пашата, а той след един час ни върна от Търново за <div id="missbox4" ondrop="drop(event)" ondragover="allowDrop(event)"></div> и ни изпрати дотам с 20 души заптиета. Ах! 
+	 </q>
+	 <p id="levski">-Васил Левски</p><br><br>
+<hr style="border-top: 1px dashed;width:700px;">
+<center>
+	 <p id="word1" draggable="true" ondragstart="drag(event)">пушка</p> ,
+	 <p id="word2" draggable="true" ondragstart="drag(event)">София</p> ,
+	 <p id="word3" draggable="true" ondragstart="drag(event)">дълбок сън</p> ,
+	 <p id="word4" draggable="true" ondragstart="drag(event)">другари</p>
+</center>
+	</div>
+		<button id="back"><a href="one.html">ПРЕДИШЕН ВЪПРОС</a></button>
+		<button id="first"><a href="index.html">НАЧАЛО</a></button>
+		<button id="next"><a href="three.html">СЛЕДВАЩ ВЪПРОС</a></button>
+	<div id="Copyright">
+		<p>Copyright © 2017. Всички права запазени. |
+		<strong>Създал: <span>Генади </span></strong></p>
+	</div>
+ <div id="background"></div>
+</div>
+</body>
+</html>

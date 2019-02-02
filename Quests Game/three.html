@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GroupWork7</title>
+	<meta charset="utf-8">
+		<script type="text/javascript" src="script.js"></script>
+<style>
+	body{
+	 margin:0;
+	 padding:0;
+	 background:url(bg.jpg)center 0 no-repeat;
+	 background-size:cover;
+	}
+	#container {
+      position:absolute;
+      width:1000px;
+      height:720px;
+      left: 50%;
+ 	  transform: translate(-50%, 0);
+ 	  z-index: 1;
+    }
+    #background {
+      position:absolute;
+      top:20px;
+      width: 1000px;
+      height: 700px;
+      background-color: black;
+      border:1px solid black;
+      z-index: -1;
+      opacity: 0.8;
+      left: 50%;
+ 	  transform: translate(-50%, 0);
+    }
+    #back{
+	 display:block;
+	 float:left;
+	 margin:10px;
+	 width:260px;
+	 height:70px;
+	 background:#5C0000;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	}
+	#first{
+	 display:block;
+	 float:left;
+	 margin:10px 0 0 90px;
+	 width:260px;
+	 height:70px;
+	 background:#017100;;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	}
+	#next{
+	 display:block;
+	 margin:10px;
+	 float:right;
+	 width:260px;
+	 height:70px;
+	 border:1px solid black;
+	 border-radius: 20px;
+	 box-shadow:0px 1px 7px #000;
+	 animation: anim 1s linear infinite alternate; 
+	}
+	@keyframes anim {	
+	 from {background: #C10000;}
+	 to {background: #5C0000;} 
+	}
+	#header{
+		width:100%;
+		height:100px;
+		margin:20px 0 0 0;
+	}
+	#header h1{
+		font-size:45px;
+		font-weight: bold;
+		color:#fff;
+		text-align: center;
+		font-style: italic;
+		animation: headtext 1s linear alternate; 
+	}
+		@keyframes headtext {	
+	      from {transform: rotateX(0deg);font-size:5px;}
+	      to {transform: rotateX(360deg);font-size:45px;} 
+	}
+	#uslovie{
+    	width:100%;
+    	height:40px;
+    }
+    #uslovie h2{
+    	margin:6px 0 0 10px;
+    	text-align:left;
+    	color:#FFD8D8;
+    	font-size:25px;
+    	font-style: italic;
+    }
+	#main{
+		width:98%;
+		height:400px;
+		margin:5px 10px;
+		border:1px solid white;
+	}
+	#main p{
+		font-size: 25px;
+		color:#fff;
+		text-align: center;
+		font-style: italic;
+	}
+	#Copyright{
+		position: absolute;
+		bottom:10px;
+		width:100%;
+		height:50px;
+	}
+	#Copyright p{
+		text-align: center;
+		color:#fff;
+	}
+	#Copyright span{
+		font-size:20px;
+	}
+	a{
+	 font-size:20px;
+	 font-family:"Arial Black", Gadget, sans-serif;
+	 color:#fff;
+	 text-decoration:none;
+	}
+/*ЗАДАЧА 3 */	
+#picture{
+	width:410px;
+	height:399px;
+	float:left;
+}
+img{
+	width:400px;
+	height:190px;
+	margin:5px 0 0 5px;
+}
+#quest{
+	width:550px;
+	height:399px;
+	float:right;
+	border-left:1px solid white;
+}
+.hint{
+	float:left;
+	width:150px;
+	height:40px;
+	margin:10px 0 0 25px;
+ 	border:1px solid black;
+ 	border-radius: 10px;
+ 	font-size:20px;
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<h1>ЗАДАЧА 3</h1>
+	</div>
+	<div id="uslovie">
+		<h2><u>Условие:</u> Коя е най-често използваната фигура в българската шевица?:</h2>
+	</div>
+	<div id="main">
+		<div id="picture">
+			<img src="shevica.jpg"/><br>
+			<img src="shevica2.jpg"/>
+	    </div>
+		<div id="quest">
+<svg width="170px" height="160px">
+	<polygon fill="white" stroke="#511762" stroke-width="5" points="50,75 95,20,140,75  95,130 	"/>
+</svg>
+<svg width="170px" height="160px">
+	<rect x="50px" y="30px" width="100" height="100" fill="white" stroke-width="5" stroke="#E59200"/>s
+</svg>
+<svg width="170px" height="160px">
+	  <circle cx="90" cy="80" r="50" stroke="#015800" stroke-width="5" fill="white" />
+</svg>
+<hr width="500px">
+			<button class="hint" onclick="right(this)">РОМБ</button>
+			<button class="hint" onclick="wrongAnswer(this)">КВАДРАТ</button>
+			<button class="hint" onclick="wrongAnswer(this)">КРЪГ</button><br><br><br>
+				<p id="aboutDiamond"></p>
+		</div>
+	</div>
+		<button id="back"><a href="two.html">ПРЕДИШЕН ВЪПРОС</a></button>
+		<button id="first"><a href="index.html">НАЧАЛО</a></button>
+		<button id="next"><a href="four.html">СЛЕДВАЩ ВЪПРОС</a></button>
+	<div id="Copyright">
+		<p>Copyright © 2017. Всички права запазени. |
+		<strong>Създал: <span>Генади </span>/strong></p>
+	</div>
+ <div id="background"></div>
+</div>
+</body>
+</html>

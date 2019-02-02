@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BUSINESS CALCULATOR</title>
+		
+	 <link href="style.css" rel="stylesheet" type="text/css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script type="text/javascript" src="script.js"></script>
+		 	 <meta charset="utf-8">
+			 <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+  <div id="box">
+  	<div id="title">
+  		<h1>БИЗНЕС КАЛКУЛАТОР</h1>
+  	</div>
+	<div id="calculator">
+
+	 <div id="list">
+	  <div id="inputmain">
+		<form>
+		<ul>
+		<li>
+			<p>Приход:</p>
+			<input type="text" id="prihod" maxlength="7" name="prihod" onkeypress='validate(event)'>
+			<p>Разход:</p>
+			<input type="text" maxlength="7" name="razhod" onkeypress='validate(event)'>
+		</li>
+		</ul>
+		</form>
+			 <i id="limit"> * позволени символи:  1-9 ;  . </i>
+	  </div>
+		     <hr/>
+		<div class="buttons">
+			<button id="newForm" onclick="clickLimitStyle()">Отвори нови полета</button>
+			<button id="calcDanuk" onclick="addBorderDanuk()">Изчисли данъка</button>
+			<button id="calcPechalba" onclick="addBorderPechalba()">Изчисли печалбата</button>
+			<br/><br/>
+			<button id="clear" onClick="window.location.reload()">Изчисти всичко</button>
+		</div>
+	 </div>
+
+	 <div id="result">
+	 		<p>Данък общо:</p><input type="text" name="rezultat" disabled>
+			<p>Печалба общо:</p><input type="text" name="pechalba" disabled>
+	 </div>
+	</div>
+
+	 <div id="Copyright">
+		<p>Copyright © 2017. Всички права запазени. |
+		<strong>Създал: <i>Генади </i></strong></p>
+	</div>
+
+  </div>
+</body>
+</html>
